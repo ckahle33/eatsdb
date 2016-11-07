@@ -1,0 +1,11 @@
+h1
+  Cities
+
+.row
+  -@cities.each do |city|
+    .col-lg-3
+      =link_to(city_path(city), html_options = {class: "city thumbnail", style:"background-image: url('#{city.image_url}')"}) do
+        span.name
+          = city.name
+        span.state
+          = city.state

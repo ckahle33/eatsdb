@@ -1,0 +1,14 @@
+.row
+  .col-lg-9
+    h1
+      =@city.name
+    h3
+      =@city.state
+    .feature-image
+     =image_tag @city.image_url
+
+  .col-lg-3.sidebar
+    .map
+      h4 Location
+    // render 'layouts/map'
+
